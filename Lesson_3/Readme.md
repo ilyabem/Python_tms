@@ -24,8 +24,8 @@ mod_sum = (a + b) % c if c != 0 else 'Ошибка: деление на ноль
 
 # Вывод результатов
 print(sum_abc, sub_ab, mul_abc, expr, prod_div, mod_sum)
-![img](img/image_1.png)
 ```
+![img](img/image_1.png)
 
 ---
 
@@ -43,8 +43,9 @@ area = (cat_a * cat_b) / 2
 hypotenuse = math.sqrt(cat_a**2 + cat_b**2)
 
 print(area, hypotenuse)
-![img](img/image_2.png)
 ```
+![img](img/image_2.png)
+
 
 ---
 
@@ -60,8 +61,9 @@ print(count_words('Hello world'))
 print(count_words('a bc'))
 print(count_words('test'))
 print(count_words('test1 test2 test3 test4 test5'))
-![img](img/image_3.png)
 ```
+![img](img/image_3.png)
+
 
 ---
 
@@ -76,8 +78,8 @@ def replace_h(s):
     return s[:first+1] + s[first+1:last].replace('h', 'Н') + s[last:]
 
 print(replace_h('hhhabchghhh'))
-![img](img/image_4.png)
 ```
+![img](img/image_4.png)
 
 ---
 
@@ -105,8 +107,9 @@ print(s[1::2])  # Нечетные индексы
 print(s[::-1])  # Обратный порядок
 print(s[::-2])  # Через один в обратном порядке
 print(len(s))  # Длина строки
-![img](img/image_5.png)
 ```
+![img](img/image_5.png)
+
 
 ---
 
@@ -121,8 +124,9 @@ def last_digit(n):
 print(last_digit(200))  # 0
 print(last_digit(123))  # 3
 print(last_digit(587))  # 7
-![img](img/image_6.png)
 ```
+![img](img/image_6.png)
+
 
 ---
 
@@ -136,8 +140,8 @@ def tens_count(n):
 
 print(tens_count(123))  # 2
 print(tens_count(978))  # 7
-![img](img/image_7.png)
 ```
+![img](img/image_7.png)
 
 ---
 
@@ -151,6 +155,7 @@ def sum_of_digits(n):
 
 print(sum_of_digits(123))  # 6
 print(sum_of_digits(555))  # 15
-![img](img/image_8.png)
 ```
+![img](img/image_8.png)
+
 
