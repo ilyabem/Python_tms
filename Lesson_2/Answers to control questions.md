@@ -97,5 +97,3 @@ myenv\Scripts\activate   # Активация (Windows)
 - `pip install --upgrade package_name` – обновить пакет до последней версии.  
 
 ---
-
-
