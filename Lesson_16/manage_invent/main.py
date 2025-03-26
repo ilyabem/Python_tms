@@ -1,4 +1,4 @@
-#В этом файле будет подключение к базе данных и вызовы функций из файла suppliers.py.
+#В этом файле будет подключение к базе данных и вызовы функций из файла supplier_operations.py.
 
 import psycopg2
 from supplier_operations import delete_supplier_and_orders
