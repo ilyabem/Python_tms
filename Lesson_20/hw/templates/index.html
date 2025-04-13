@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Система управления инвентарем</title>
+</head>
+<body>
+    <h1>Список товаров</h1>
+    <a href="{{ url_for('add_product') }}">Добавить товар</a>
+    <table>
+        <tr>
+            <th>Название</th>
+            <th>Количество</th>
+            <th>Цена</th>
+            <th>Категория</th>
+            <th>Поставщик</th>
+            <th>Действия</th>
+        </tr>
+        {% for product in products %}
+        <tr>
+            <td>{{ product.name }}</td>
+            <td>{{ product.quantity }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.category.name }}</td>
+            <td>{{ product.supplier.name }}</td>
+            <td>
+                <a href="{{ url_for('edit_product', id=product.id) }}">Редактировать</a>
+                <form action="{{ url_for('delete_product', id=product.id) }}" method="POST">
+                    <button type="submit">Удалить</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
